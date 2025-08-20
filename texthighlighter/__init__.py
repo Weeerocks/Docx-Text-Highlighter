@@ -1,0 +1,1 @@
+from texthighlighter.src.text_highlighter import bold_words_in_text

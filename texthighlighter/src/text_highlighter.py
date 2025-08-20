@@ -58,21 +58,19 @@ def bold_words_in_text(input_docx_path, bold_words, output_path='output.docx'):
 
     # Save the new document
     document.save(output_path)
+    print(f"Document has been saved to this path: '{output_path}'")
+    return
 
-def main():
+
+if __name__ == "__main__":
+    input_path = "/home/cait/Desktop/Python-Package/DocxFiles/Python Docs Text.docx"
     bold_words = [
     "prime minister",
     "unity",
     "economic growth",
     "leadership",
     "real change",
-    "it’s ",
-    "science",
-    "long-term"
+    "it's",
+    "science"
     ]
-
-    bold_words_in_text("/home/cait/Desktop/Python-Package/DocxFiles/Python Docs Text.docx", bold_words)
-
-
-if __name__ == "__main__":
-    main()
+    bold_words_in_text(input_path, bold_words)
