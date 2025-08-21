@@ -3,11 +3,11 @@ requires = ["uv_build >= 0.7.19, <0.9.0"]
 build-backend = "uv_build"
 
 [tool.uv.build-backend]
-module-root = ""
+module-root = "src"
 
 [project]
-name = "texthighlighter"
-version = "0.0.1"
+name = "docxtexthighlighter"
+version = "0.0.2"
 authors = [
   { name="mq", email="mq@example.com" },
 ]
@@ -22,8 +22,9 @@ dependencies = [
     "lxml==6.0.0",
     "python-docx==1.2.0",
     "setuptools==80.9.0",
+    "twine>=6.1.0",
     "typing-extensions==4.14.1",
-    "wheel==0.45.1"
+    "wheel==0.45.1",
 ]
 license = "MIT"
 license-files = ["LICEN[CS]E*"]
