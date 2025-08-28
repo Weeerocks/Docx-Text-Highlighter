@@ -10,9 +10,9 @@ This Python function allows you to bold specific words or phrases in a `.docx` d
 
 ## How to install
 
-Run the following command:
+Run the following commands:
 
-```$ pip install -i https://test.pypi.org/simple/ docxtexthighlighter```
+```$ pip install -i https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple docxtexthighlighter```
 
 
 ## Example
